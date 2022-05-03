@@ -10,3 +10,14 @@ def swap(x,y):
 
 retValue = swap(3,4)
 print(retValue)
+
+
+def intersect(prelist, postlist):
+    result = []
+    for x in prelist:
+        if x in postlist and x not in result:
+            result.append(x)
+    return result
+print(intersect("HAM","SPAM"))
+
+
